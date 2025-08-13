@@ -21,7 +21,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../Somm...!/Images/BG.jpg);
+  background-image: url(../Images/BG.jpg);
   opacity:50%;
   background-position: center;
   background-size: cover;
@@ -304,3 +304,4 @@ span:hover{
         opacity: 100%;
     }
 }
+
