@@ -1,0 +1,490 @@
+*{
+    text-decoration: none;
+    font-family: 'Arial', 'Rounded MT';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+}
+/* #myVideo {
+    width: 100%;
+    top: 0;
+} */
+
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url(../Somm...!/Images/BG.jpg); */
+  opacity:60%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    opacity: 60%;
+    padding-left: 80px;
+    font-size: 30px;
+    color: #ff8b00;
+    font-family: 'Forte', 'Regular';
+    letter-spacing: 2px;
+    text-decoration: none;
+    z-index: 2;
+    animation: logodown 1.5s ease;
+}
+
+.logo:hover{
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+@keyframes logodown{
+    from{
+        top: -100px;
+        opacity: 0%;
+    }
+    to{
+        top: 30px;
+        opacity: 60%;
+    }
+}
+
+.navbar-center{
+    background-color: #ff8b00;
+    width: 100%;
+}
+
+.navbar-center ul{
+    position: fixed;
+    display: flex;
+    width: 10px;
+    right: 27%;
+    top: 30px;
+    animation: slidedown 1.5s ease;
+}
+
+@keyframes slidedown{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 30px;
+    }
+}
+
+.navbar-center .btn a{
+    top: -8.5px;
+    left: 20px;
+    border: 2px solid #ff8b00;
+    background-color: #ff8b00;
+    border-radius: 8px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    display: flex;
+    gap: 8px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    width: 125px;
+    height: 35px;
+    opacity: 60%;
+}
+
+.navbar-center .btn a i{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 100%;
+}
+
+.navbar-center .btn a:hover{
+    opacity: 100%;
+    transition: 0.8s;
+    text-shadow: 0 0 10px #ff8b00;
+}
+
+.navbar-center span{
+    color: white;
+    padding: 25px;
+    opacity: 60%;
+    font-size: 18px;
+}
+
+#contact{
+    opacity: 100%;
+}
+
+.navbar-center span:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+
+.black{
+    top: 90px;
+    left: -10px;
+    position: absolute;
+    background-color: black;
+    width: 198px;
+    height: 638px;
+    z-index: 1;
+}
+
+.navbar-left{
+    position: relative;
+    border: 2px solid white;
+    margin-left: 90px;
+    width: 50px;
+    height: 250px;
+    top: 240px;
+    border-radius: 50px;
+    z-index: 2;
+    animation: slideright 1.5s ease-out;
+}
+
+@keyframes slideright{
+    from{
+        margin-left: -90px;
+    }
+    to{
+        margin-left: 90px;
+    }
+}
+
+.navbar-left .profile a{
+    position: absolute;
+    display: inline-flex;
+    opacity: 60%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left .profile a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+
+.navbar-left .search a{
+    position: absolute;
+    display: inline-flex;
+    opacity: 60%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left .search a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.navbar-left .film a{
+    position: absolute;
+    display: inline-flex;
+    opacity: 60%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left .film a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.navbar-left .star a{
+    position: absolute;
+    display: inline-flex;
+    opacity: 60%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left .star a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+#search{
+    padding-top: 60px;
+}
+
+#film{
+    padding-top: 60px;
+}
+
+#star{
+    padding-top: 60px;
+}
+
+.contact-bg .background{
+    position: relative;
+    display: flex;
+    left: 32.5%;
+    bottom: 200px;
+    width: 560px;
+    height: 245px;
+    opacity: 70%;
+    animation: fadein 1.5s linear;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 70%;
+    }
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 380px;
+}
+
+.container .contact-info{
+    position: relative;
+    width: 40%;
+    display: flex;
+    left: 100px;
+    opacity: 90%;
+    flex-direction: column;
+    animation: move-in 1.5s ease;
+    transform: translateX(0px);
+}
+
+@keyframes move-in{
+    from{
+        transform: translateX(-200px);
+        opacity: 0%;   
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 90%;
+    }
+}
+
+.container .contact-info .box{
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+}
+
+.container .contact-info .box .icon{
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.container .contact-info .box .icon:hover{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+}
+
+.container .contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    margin-top: -3.5px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contact-info .box .text h3{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container .contact-info .box .text h3:hover{
+    scale: 1.005;
+    transition: 0.5s;
+}
+
+.container .contact-info .box .text p{
+    position: relative;
+    margin-top: -5px;
+    line-height: 25px;
+    opacity: 60%;
+}
+
+.contact-me{
+    position: relative;
+    width: 40%;
+    padding: 40px;
+    left: 150px;
+    opacity: 70%;
+    text-align: center;
+}
+
+.contact-me span{
+    color: gray;
+}
+
+.contact-me h3{
+    font-size: 30px;
+    text-align: center;
+    transform: scale(1);
+    opacity: 90%;
+    animation: scale-out 1.5s ease;
+}
+
+@keyframes scale-out{
+    from{
+        transform: scale(1.2);
+        opacity: 0%;   
+    }
+    to{
+        transform: scale(1);
+        opacity: 90%;
+    }
+}
+
+.contact-me .left #name,.contact-me .right #phone{
+    opacity: 90%;
+    transform: translateX(0px);
+    animation: move-right 1.5s ease;
+}
+
+@keyframes move-right{
+    from{
+        transform: translateX(-150px);
+        opacity: 0%;   
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 90%;
+    }
+}
+
+.contact-me .left #email, .contact-me .right #subject{
+    opacity: 90%;
+    transform: translateX(0px);
+    animation: move-left 1.5s ease;
+}
+
+@keyframes move-left{
+    from{
+        transform: translateX(150px);
+        opacity: 0%;   
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 90%;
+    }
+}
+
+.contact-me textarea{
+    opacity: 90%;
+    transform: translateY(0px);
+    animation: move-top 1.5s ease;
+}
+
+@keyframes move-top{
+    from{
+        transform: translateY(100px);
+        opacity: 0%;   
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 90%;
+    }
+}
+
+.contact-me .left input, .contact-me .right input{
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    margin: 15px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 9.6px;
+}
+
+.contact-me form input::placeholder{
+    color: gray;
+    background-color: black;
+}
+
+.contact-me form textarea{
+    position: relative;
+    width: 435px;
+    padding: 10px;
+    margin: 15px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 9.6px;
+}
+
+.contact-me form button{
+    margin-top: 25px;
+    height: 35px;
+    width: 125px;
+    background-color: #ff8b00;
+    color: black;
+    border: none;
+    border-radius: 9.6px;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 100%;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    animation: move-top 1.5s ease;
+}
+
+.contact-me form button:hover{
+    background-color: black;
+    color: #ff8b00;
+    border: 2px solid #ff8b00;
+    opacity: 100%;
+    transition: 0.8s;
+}

@@ -1,0 +1,373 @@
+*{
+    text-decoration: none;
+    font-family: 'Arial', 'Rounded MT';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+/* #myVideo {
+    width: 100%;
+    top: 0;
+} */
+
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Somm...!/Images/BG.jpg);
+  opacity:60%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fadein 2s linear;
+}
+
+.logo{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    opacity: 60%;
+    padding-left: 80px;
+    font-size: 30px;
+    color: #ff8b00;
+    font-family: 'Forte', 'Regular';
+    letter-spacing: 2px;
+    text-decoration: none;
+    animation: logodown 1.5s ease;
+}
+
+.logo:hover{
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+@keyframes logodown{
+    from{
+        top: -100px;
+        opacity: 0%;
+    }
+    to{
+        top: 30px;
+        opacity: 60%;
+    }
+}
+
+.navbar-center ul{
+    position: fixed;
+    display: flex;
+    width: 10px;
+    right: 27%;
+    top: 30px;
+    /* opacity: 60%; */
+    animation: slidedown 1.5s ease;
+}
+
+@keyframes slidedown{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 30px;
+    }
+}
+
+.navbar-center .btn a{
+    top: -8.5px;
+    left: 20px;
+    border: 2px solid #ff8b00;
+    background-color: #ff8b00;
+    border-radius: 8px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    display: flex;
+    gap: 8px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    width: 125px;
+    height: 35px;
+    opacity: 60%;
+    animation: fadein 1s linear;
+}
+
+.navbar-center .btn a i{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.navbar-center .btn a:hover{
+    opacity: 100%;
+    transition: 0.8s;
+    text-shadow: 0 0 10px #ff8b00;
+}
+
+.searchbar a{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: 28%;
+    left: 35%;
+    gap: 350px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 480px;
+    opacity: 60%;
+    animation: searchup 1.5s ease;
+}
+.searchbar a i{
+    font-size: 20px;
+    font-weight: 250;
+    opacity: 100%;
+}
+
+.searchbar a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+@keyframes searchup{
+    from{
+        top: 48%;
+    }
+    to{
+        top: 28%;
+    }
+}
+
+span{
+    color: white;
+    padding: 25px;
+    opacity: 60%;
+    font-size: 18px;
+}
+
+#home{
+    opacity: 100%;
+}
+
+#contact{
+    animation: fadein 1s linear;
+}
+
+span:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+/* .navbar-right ul a{
+    position: relative;
+    display: flex;
+    padding: 18px;
+    color: white;
+    opacity: 70%;
+    font-size: 25px;
+    top: 480px;
+    right: 40px;
+    justify-content:right;
+}
+.navbar-right ul a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+} */
+
+.navbar-right{
+    position: relative;
+    display: flex;
+    /* border: 1px solid whitesmoke; */
+    left: 1415px;
+    width: 45px;
+    height: 180px;
+    top: 480px;
+    /* border-radius: 50px; */
+    animation: slideleft 1.5s ease;
+}
+
+@keyframes slideleft{
+    from{
+        left: 1470px;
+    }
+    to{
+        left: 1415px;
+    }
+}
+
+.navbar-right a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    color: white;
+    opacity: 60%;
+    font-size: 25px;
+    right: -10px;
+    animation: fadein 1.5s linear;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 60%;
+    }
+}
+.navbar-right a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.navbar-left{
+    position: relative;
+    display: flex;
+    margin-left: 90px;
+    width: 45px;
+    height: 250px;
+    top: 60px;
+    border: 2px solid white;
+    border-radius: 50px;
+    animation: slideright 1.5s ease-out;
+}
+
+@keyframes slideright{
+    from{
+        margin-left: -90px;
+    }
+    to{
+        margin-left: 90px;
+    }
+}
+
+/* .navbar-left a{
+    position: absolute;
+    display: inline-flex;
+    opacity: 60%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+} */
+
+#search{
+    opacity: 100%;
+}
+
+.navbar-left a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 60%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 35%;
+    margin-right: 35%;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    gap: 15px;
+    opacity: 60%;
+    animation: slideup 1.5s ease;
+}
+
+p{
+    color: white;
+    font-weight: lighter;
+    font-family: "Daughter of Fortune";
+}
+
+h4{
+    color: #c1bdb9;
+    font-weight: lighter;
+    font-family: "Daughter of Fortune";
+}
+
+@keyframes slideup{
+    from{
+        opacity: 0%;
+        margin-top: 150px;
+    }
+    to{
+        opacity: 60%;
+        margin-top: 100px;
+    }
+}
+
+.content:hover{
+    scale: 1.3px;
+    transform: 0.5s;
+    cursor: pointer;
+}
+
+.cpyright a{
+    position: relative;
+    display: flex;
+    color: white;
+    margin-top: 28px;
+    margin-left: 60px;
+    margin-right: 70%;
+    align-items: center;
+    justify-content: left;
+    font-size: 18px;
+    gap: 5px;
+    opacity: 60%;
+    animation: up 1.5s ease;
+}
+
+@keyframes up{
+    from{
+        opacity: 0%;
+        margin-top: -60px;
+    }
+    to{
+        opacity: 60%;
+        margin-top: 30px;
+    }
+}
+
+.cpyright a i{
+    font-size: 28px;
+}
+
+.cpyright p, .cpyright h4{
+    color: white;
+    font-family: "Bronie";
+}
+

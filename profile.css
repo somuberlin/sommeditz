@@ -1,0 +1,487 @@
+*{
+    text-decoration: none;
+    font-family: 'Arial', 'Rounded MT';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+/* #myVideo {
+    width: 100%;
+    top: 0;
+} */
+
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url(../Somm...!/Images/BG.jpg); */
+  opacity:60%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    opacity: 60%;
+    padding-left: 80px;
+    font-size: 30px;
+    color: #ff8b00;
+    font-family: 'Forte', 'Regular';
+    letter-spacing: 2px;
+    text-decoration: none;
+    animation: logodown 1.5s ease;
+}
+
+.logo:hover{
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+@keyframes logodown{
+    from{
+        top: -100px;
+        opacity: 0%;
+    }
+    to{
+        top: 30px;
+        opacity: 60%;
+    }
+}
+
+.navbar-center ul{
+    position: fixed;
+    display: flex;
+    width: 10px;
+    right: 27%;
+    top: 30px;
+    animation: slidedown 1.5s ease;
+}
+
+@keyframes slidedown{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 30px;
+    }
+}
+
+.navbar-center .btn a{
+    top: -8.5px;
+    left: 20px;
+    border: 2px solid #ff8b00;
+    background-color: #ff8b00;
+    border-radius: 8px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    display: flex;
+    gap: 8px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    width: 125px;
+    height: 35px;
+    opacity: 60%;
+}
+
+.navbar-center .btn a i{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 100%;
+}
+
+.navbar-center .btn a:hover{
+    opacity: 100%;
+    transition: 0.8s;
+    text-shadow: 0 0 10px #ff8b00;
+}
+
+span{
+    color: white;
+    padding: 25px;
+    opacity: 60%;
+    font-size: 18px;
+}
+
+span:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+
+.black{
+    top: 90px;
+    left: -10px;
+    position: absolute;
+    background-color: black;
+    width: 198px;
+    height: 638px;
+    z-index: 1;
+}
+
+.navbar-left{
+    position: relative;
+    border: 2px solid white;
+    margin-left: 90px;
+    width: 45px;
+    height: 250px;
+    top: 240px;
+    border-radius: 50px;
+    z-index: 2;
+    animation: slideright 1.5s ease-out;
+}
+
+@keyframes slideright{
+    from{
+        margin-left: -90px;
+    }
+    to{
+        margin-left: 90px;
+    }
+}
+
+.navbar-left .profile a{
+    position: absolute;
+    display: inline-flex;
+    opacity: 100%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left .profile a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+
+.navbar-left .search a{
+    position: absolute;
+    display: inline-flex;
+    opacity: 60%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left .search a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.navbar-left .film a{
+    position: absolute;
+    display: inline-flex;
+    opacity: 60%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left .film a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.navbar-left .star a{
+    position: absolute;
+    display: inline-flex;
+    opacity: 60%;
+    padding: 18px;
+    right: 0;
+    left: -7px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-left .star a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+#search{
+    padding-top: 60px;
+}
+
+#film{
+    padding-top: 60px;
+}
+
+#star{
+    padding-top: 60px;
+}
+
+.my-profile{
+    animation: move-in 1.5s ease;
+    transform: translateX(0px);
+}
+
+@keyframes move-in{
+    from{
+        transform: translateX(-200px);
+        opacity: 0%;   
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+.my-profile .background{
+    position: relative;
+    /* border: 2px solid red; */
+    border-bottom: 5px solid white;
+    margin-left: 200px;
+    margin-top: -190px;
+    width: 510px;
+    height: 220px;
+    opacity: 70%;
+}
+
+
+.my-profile .dp{
+    position: absolute;
+    display: flex;
+    margin-left: 220px;
+    margin-top: -80px;
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+
+.my-profile h2{
+    position: absolute;
+    display: flex;
+    margin-left: 230px;
+    margin-top: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 80%;
+}
+
+.my-profile h4{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 24%;
+    border-top: 2.5px solid white;
+    padding: 18px;
+    width: 476px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    opacity: 80%;
+}
+
+.my-profile h5{
+    position: absolute;
+    display: flex;
+    margin-left: 230px;
+    margin-top: 140px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 80%;
+}
+
+.video video{
+    position: relative;
+    display: flex;
+    width: 40.3%;
+    margin-left: 57.25%;
+    margin-top: -12.5%;
+    opacity: 100%;
+    z-index: -2;
+    animation: videofade 1.5s linear;
+}
+
+@keyframes videofade{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.app{
+    position: absolute;
+    display: flex;
+    left: 67%;
+    bottom: 12%;
+    width: 70px;
+    height: 70px;
+    opacity: 75%;
+    animation: appup 1.5s ease;
+}
+
+@keyframes appup{
+    from{
+        bottom: 3%;
+        opacity: 0%;
+    }
+    to{
+        bottom: 12%;
+        opacity: 75%;
+    }
+}
+
+.software{
+    position: absolute;
+    display: flex;
+    left: 67%;
+    top: 23%;
+    width: 75px;
+    height: 75px;
+    opacity: 75%;
+    animation: softwaredown 1.5s ease;
+}
+
+@keyframes softwaredown{
+    from{
+        top: 12%;
+        opacity: 0%;
+    }
+    to{
+        top: 23%;
+        opacity: 75%;
+    }
+}
+
+.DaVinciResolve #DR{
+    position: absolute;
+    left: 73%;
+    padding: 7px;
+    font-style: italic;
+    font-family: Inter, sans-serif;
+    opacity: 65%;
+    bottom: 100px;
+    animation: DRdown 1.5s ease;
+}
+
+@keyframes DRdown{
+    from{
+        bottom: 40px;
+        opacity: 0%;
+    }
+    to{
+        bottom: 100px;
+        opacity: 65%;
+    }
+}
+
+.DaVinciResolve #dr{
+    position: absolute;
+    left: 69.6%;
+    padding: 40px;
+    font-family: "Marko One", serif;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    opacity: 50%;
+    bottom: 35px;
+    animation: drdown 1.5s ease;
+}
+
+@keyframes drdown{
+    from{
+        bottom: -22.5px;
+        opacity: 0%;
+    }
+    to{
+        bottom: 35px;
+        opacity: 50%;
+    }
+}
+
+.PremierePro #PP{
+    position: absolute;
+    left: 73%;
+    padding: 7px;
+    font-style: italic;
+    font-family: Inter, sans-serif;
+    opacity: 65%;
+    top: 21.5%;
+    left: 74%;
+    animation: PPdown 1.5s ease;
+}
+
+@keyframes PPdown{
+    from{
+        top: 12%;
+        opacity: 0%;
+    }
+    to{
+        top: 21.5%;
+        opacity: 65%;
+    }
+}
+
+.PremierePro #pp{
+    position: absolute;
+    left: 69.6%;
+    padding: 40px;
+    font-family: "Marko One", serif;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    opacity: 50%;
+    top: 20.5%;
+    left: 69.5%;
+    animation: ppdown 1.5s ease;
+}
+
+@keyframes ppdown{
+    from{
+        top: 12%;
+        opacity: 0%;
+    }
+    to{
+        top: 20.5%;
+        opacity: 50%;
+    }
+}
+
+.editor h4{
+    position: absolute;
+    left: 58.5%;
+    top: 46%;
+    padding: 10px;
+    text-align: center;
+    font-family: "Marko One", serif;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 35px;
+    opacity: 50%;
+    width: 35%;
+    animation: fade 4s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 50%;
+    }
+}

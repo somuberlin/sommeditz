@@ -1,0 +1,301 @@
+*{
+    text-decoration: none;
+    font-family: 'Arial', 'Rounded MT';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+/* #myVideo {
+    width: 100%;
+    top: 0;
+} */
+
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Somm...!/Images/BG.jpg);
+  opacity:50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fadein 3s linear;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 50%;
+    }
+}
+
+.logo{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    opacity: 60%;
+    padding-left: 80px;
+    font-size: 30px;
+    color: #ff8b00;
+    font-family: 'Forte', 'Regular';
+    letter-spacing: 2px;
+    text-decoration: none;
+    animation: logodown 1.5s ease;
+}
+
+.logo:hover{
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+@keyframes logodown{
+    from{
+        top: -100px;
+        opacity: 0%;
+    }
+    to{
+        top: 30px;
+        opacity: 60%;
+    }
+}
+
+.navbar-center ul{
+    position: fixed;
+    display: flex;
+    width: 10px;
+    right: 27%;
+    top: 30px;
+    /* opacity: 60%; */
+    animation: slidedown 1.5s ease;
+}
+
+@keyframes slidedown{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 30px;
+    }
+}
+
+.navbar-center .btn a{
+    top: -8.5px;
+    left: 20px;
+    border: 2px solid #ff8b00;
+    background-color: #ff8b00;
+    border-radius: 8px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    display: flex;
+    gap: 8px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    width: 125px;
+    height: 35px;
+    opacity: 60%;
+    animation: fadein 1s linear;
+}
+
+.navbar-center .btn a i{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.navbar-center .btn a:hover{
+    opacity: 100%;
+    transition: 0.8s;
+    text-shadow: 0 0 10px #ff8b00;
+}
+
+span{
+    color: white;
+    padding: 25px;
+    opacity: 60%;
+    font-size: 18px;
+}
+
+#film{
+    opacity: 100%;
+}
+
+#contact{
+    animation: fadein 1s linear;
+}
+
+span:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.navbar-left{
+    position: relative;
+    border: 2px solid white;
+    width: 45px;
+    height: 250px;
+    border-radius: 50px;
+    margin-top: 240px;
+    margin-left: 90px;
+    animation: slideright 1.5s ease-out;
+    z-index: 1;
+}
+
+ .navbar-left a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    right: -1.5px;
+    padding: 18px;
+    font-size: 25px;
+    color: white;
+    opacity: 60%;
+}
+
+.navbar-left a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+} 
+   
+@keyframes slideright{
+    from{
+        margin-left: -90px;
+    }
+    to{
+        margin-left: 90px;
+    }
+}
+
+.navbar-bottom{
+    position: relative;
+    height: 45px;
+    width: 125px;
+    border-radius: 50px;
+    top: 150px;
+    left: 1300px;
+    animation: slideup 1.5s ease-out;
+    z-index: 1;
+}
+
+#bottom{
+    border: 2px solid white;
+}
+
+.navbar-bottom a{
+    position: relative;
+    flex-direction: row;
+    color: white;
+    padding: 10px;
+    left: 10px;
+    top: 9.5px;
+    font-size: 28px;
+    opacity: 60%;
+}
+@keyframes slideup{
+    from{
+        top: 255px;
+    }
+    to{
+        top: 150px;
+    }
+}
+
+.navbar-bottom a:hover{
+    text-shadow: 0 0 10px white;
+    opacity: 100%;
+    transition: 0.8s;
+} 
+
+#left
+{
+    opacity: 100%;
+}
+
+.album{
+    position: relative;
+    display: flex;
+    top: -375px;
+    text-align: center;
+}
+
+.video img{
+    position: relative;
+    left: 40px;
+    width: 15%;
+    border-radius: 50px;
+    padding: 35px;
+}
+#i1
+{
+    transform: translateX(0px);
+    opacity: 100%;
+    animation: right 2s ease;
+}
+
+#i2
+{
+    transform: translateY(0px);
+    opacity: 100%;
+    animation: up 2s ease;
+}
+
+#i3
+{
+    transform: translateX(0px);
+    opacity: 100%;
+    animation: left 2s ease;
+}
+
+@keyframes up{
+    from
+    {
+        transform: translateY(200px);
+        opacity: 0%;
+    }
+    to
+    {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes left{
+    from
+    {
+        transform: translateX(200px);
+        opacity: 0%;
+    }
+    to
+    {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes right{
+    from
+    {
+        transform: translateX(-200px);
+        opacity: 0%;
+    }
+    to
+    {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
